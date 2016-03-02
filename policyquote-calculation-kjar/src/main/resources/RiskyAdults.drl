@@ -1,0 +1,19 @@
+package org.acme.insurance.policyquote;
+
+import org.acme.insurance.policyquote.Driver;
+import org.acme.insurance.policyquote.Policy;
+
+rule "RiskyAdults"
+
+    ruleflow-group "calculation"
+
+    when
+        //conditions
+        $driver : Driver(age > 24, numberOfAccidents >= 1 || numberOfTickets >=2, $id : id)
+        $policy : Policy(price == 0, policyType == "CAR", driver == $id)
+    then
+        //actions
+        modify($policy) {setPrice(300)};
+        
+end
+

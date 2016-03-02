@@ -1,0 +1,20 @@
+package org.acme.insurance.policyquote;
+
+import org.acme.insurance.policyquote.Driver;
+import org.acme.insurance.policyquote.Policy;
+
+rule "NoviceDriverSurcharge"
+
+	no-loop 
+	ruleflow-group "surcharge"
+	lock-on-active 
+    
+    when
+        //conditions
+        $driver : Driver(age < 20, $id : id)
+        $policy : Policy(price > 0, policyType == "CAR", driver == $id)
+    then
+        //actions
+        modify($policy) {setPrice($policy.getPrice() + 250)};
+
+end

@@ -3,17 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.gpte.bpms-advanced</groupId>
-  <artifactId>policyquote-calculation-kjar</artifactId>
+  <artifactId>policyquote-datamodel</artifactId>
   <version>1.0</version>
-  <name>policyquote-calculation-kjar</name>
+  <name>policyquote-datamodel</name>
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-maven-plugin</artifactId>
-        <version>6.3.0.Final-redhat-5</version>
-        <extensions>true</extensions>
-      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -23,11 +17,4 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <groupId>com.redhat.gpte.bpms-advanced</groupId>
-      <artifactId>policyquote-datamodel</artifactId>
-      <version>1.0</version>
-    </dependency>
-  </dependencies>
 </project>
