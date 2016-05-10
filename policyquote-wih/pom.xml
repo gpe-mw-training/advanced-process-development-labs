@@ -32,6 +32,6 @@
     </dependency>
   </dependencies>
   <properties>
-    <version.bpms>6.3.0.Final-redhat-5</version.bpms>
+    <version.bpms>6.4.0.Final-redhat-3</version.bpms>
   </properties>
 </project>
