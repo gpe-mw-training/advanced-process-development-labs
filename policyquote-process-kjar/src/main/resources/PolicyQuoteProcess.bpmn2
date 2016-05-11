@@ -182,7 +182,7 @@
       <bpmn2:dataInputAssociation id="_vcFfieF4EeWo68ZuEW0THQ">
         <bpmn2:targetRef>_89E857C1-0184-43B5-AA4E-58B9881B1D9E_GroupIdInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_vcFfiuF4EeWo68ZuEW0THQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_vcFfi-F4EeWo68ZuEW0THQ"><![CDATA[agent]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_vcFfi-F4EeWo68ZuEW0THQ"><![CDATA[Administrators]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_vcFfjOF4EeWo68ZuEW0THQ">_89E857C1-0184-43B5-AA4E-58B9881B1D9E_GroupIdInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
