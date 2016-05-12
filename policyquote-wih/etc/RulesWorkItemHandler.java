@@ -23,6 +23,7 @@ public class RulesWorkItemHandler implements WorkItemHandler, Cacheable {
         kieContainer = ks.newKieContainer(releaseId);
         kieScanner = ks.newKieScanner(kieContainer);
         kieScanner.start(10000L);
+        System.out.println("Started KieScanner for releaseId : " + releaseIdStr);
     }
 
     @Override
