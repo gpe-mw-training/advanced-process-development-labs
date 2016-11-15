@@ -34,6 +34,7 @@ public class RulesWorkItemHandler implements WorkItemHandler, Cacheable {
         KieSession kieSession;
         String kieSessionName = (String)workItem.getParameter("kieSession");
         if (kieSessionName == null || kieSessionName.isEmpty()) {
+            System.out.println("***** WARNING ********:  value for servicetask parameter kieSession is not found!!!!  Check the data inputs assignments for your service task");
             kieSession = kieContainer.newKieSession();
         } else {
             kieSession = kieContainer.newKieSession(kieSessionName);
