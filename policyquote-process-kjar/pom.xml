@@ -6,6 +6,39 @@
   <artifactId>policyquote-process-kjar</artifactId>
   <version>1.0</version>
   <name>policyquote-process-kjar</name>
+  <repositories>
+    <repository>
+      <id>redhat-ga-repository</id>
+      <name>redhat-ga-repository</name>
+      <url>http://maven.repository.redhat.com/ga/</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>redhat</id>
+      <name>Redhat Plugin Repository</name>
+      <url>http://maven.repository.redhat.com/ga/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+    <pluginRepository>
+      <id>central</id>
+      <name>Maven Plugin Repository</name>
+      <url>http://repo1.maven.org/maven2</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
   <build>
     <plugins>
       <plugin>
@@ -28,6 +61,11 @@
       <groupId>com.redhat.gpte.bpms-advanced</groupId>
       <artifactId>policyquote-datamodel</artifactId>
       <version>1.0</version>
+    </dependency>
+	<dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-api</artifactId>
+        <version>6.5.0.Final-redhat-2</version>
     </dependency>
   </dependencies>
 </project>
