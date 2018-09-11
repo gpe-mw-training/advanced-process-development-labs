@@ -6,6 +6,7 @@
   <artifactId>descriptor-lab-process-kjar</artifactId>
   <version>1.0</version>
   <name>descriptor-lab-process-kjar</name>
+  <packaging>kjar</packaging>
   <dependencies>
     <dependency>
       <groupId>org.acme.special-trips-agency-ws</groupId>
@@ -14,8 +15,14 @@
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
+      <artifactId>kie-internal</artifactId>
+      <version>7.7.0.Final-redhat-10</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>6.5.0.Final-redhat-2</version>
+      <version>7.7.0.Final-redhat-10</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -24,9 +31,16 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.5.0.Final-redhat-2</version>
+        <version>7.7.0.Final-redhat-10</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>redhat</id>
+      <name>redhat-ga</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </repository>
+  </repositories>
 </project>
