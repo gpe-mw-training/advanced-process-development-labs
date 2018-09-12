@@ -19,6 +19,18 @@
     "displayName" : "Log",
     "icon" : "defaultlogicon.gif"
   ],
+  
+  [
+    "name" : "CreditCardPaymentService",
+    "parameters" : [
+        "payment" : new ObjectDataType()
+    ],
+    "results" : [
+        "paymentResult" : new ObjectDataType(),
+    ],
+    "displayName" : "CreditCardPaymentService",
+    "icon" : "defaultservicenodeicon.png"
+  ],
 
   [
     "name" : "WebService",
