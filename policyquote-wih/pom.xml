@@ -32,6 +32,13 @@
     </dependency>
   </dependencies>
   <properties>
-    <version.bpms>6.5.0.Final-redhat-2</version.bpms>
+    <version.bpms>7.7.0.Final-redhat-10</version.bpms>
   </properties>
+  <repositories>
+    <repository>
+      <id>redhat</id>
+      <name>redhat-ga</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </repository>
+  </repositories>
 </project>
