@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_RAAWUMhSEeiTTsL6btxjaw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_8IjzEMhhEeiv3qq26dBc1w" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_applicantNameItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_flight_carrierItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_flight_flightNrItem" structureRef="String"/>
@@ -50,8 +50,9 @@
   <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkOutInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingIdInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flightBookingOutputXItem" structureRef="org.acme.specialtripsagency.flightservice.Booking"/>
-  <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotelBookingOutputXItem" structureRef="org.acme.specialtripsagency.hotelservice.HotelBooking"/>
+  <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_paymentInputXItem" structureRef="org.specialtripsagency.PaymentObject"/>
+  <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingOutputXItem" structureRef="org.acme.specialtripsagency.flightservice.Booking"/>
+  <bpmn2:itemDefinition id="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingOutputXItem" structureRef="org.acme.specialtripsagency.hotelservice.HotelBooking"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_applicantNameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_carrierInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_flightNrInputXItem" structureRef="String"/>
@@ -65,8 +66,8 @@
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_expiryInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_amountInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flightBookingOutputXItem" structureRef="org.acme.specialtripsagency.flightservice.Booking"/>
-  <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_hotelBookingOutputXItem" structureRef="org.acme.specialtripsagency.hotelservice.HotelBooking"/>
+  <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_bookingOutputXItem" structureRef="org.acme.specialtripsagency.flightservice.Booking"/>
+  <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_bookingOutputXItem" structureRef="org.acme.specialtripsagency.hotelservice.HotelBooking"/>
   <bpmn2:itemDefinition id="__F87134FA-BF51-47EE-A8A8-CD763041E47B_paymentOutputXItem" structureRef="org.specialtripsagency.PaymentObject"/>
   <bpmn2:itemDefinition id="__254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputXItem" structureRef="String"/>
@@ -83,7 +84,7 @@
   <bpmn2:itemDefinition id="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ResultOutputXItem" structureRef="java.lang.Object"/>
   <bpmn2:process id="descriptor-lab-process-kjar.travel-booking" drools:packageName="org.specialtripsagency" drools:version="1.0" drools:adHoc="false" name="travel-booking" isExecutable="true">
-    <bpmn2:documentation id="_RAAWUchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+    <bpmn2:documentation id="_8IjzEchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     <bpmn2:property id="applicantName" itemSubjectRef="_applicantNameItem" name="applicantName"/>
     <bpmn2:property id="flight_carrier" itemSubjectRef="_flight_carrierItem" name="flight_carrier"/>
     <bpmn2:property id="flight_flightNr" itemSubjectRef="_flight_flightNrItem" name="flight_flightNr"/>
@@ -107,61 +108,61 @@
     <bpmn2:property id="flightBookingResponse" itemSubjectRef="_flightBookingResponseItem" name="flightBookingResponse"/>
     <bpmn2:property id="hotelBookingResponse" itemSubjectRef="_hotelBookingResponseItem" name="hotelBookingResponse"/>
     <bpmn2:sequenceFlow id="_3F4955BD-05EA-46B0-8264-B6BC4AE85B34" sourceRef="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847" targetRef="_E61F0EDC-B05C-4D2D-808F-7346A93413FD">
-      <bpmn2:documentation id="_RAAWUshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzEshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_A9D136A8-CC32-4F30-BAB4-80782D444AEF" sourceRef="_EE791BDE-2362-475E-B8C3-980BEE05A149" targetRef="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847">
-      <bpmn2:documentation id="_RAAWU8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzE8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_195B17DA-4AB4-49D1-8A47-C8938E18C267" sourceRef="_E5651FBA-C243-4EC5-A0A9-CE6D9AF9CA4F" targetRef="_254C82B1-5180-4F9A-996C-9A3835AD55D2">
-      <bpmn2:documentation id="_RAAWVMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzFMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_DEA92570-3388-4ABF-A887-C62D03E696D1" sourceRef="_254C82B1-5180-4F9A-996C-9A3835AD55D2" targetRef="_59E9CC19-5C59-4571-A187-480018725EF5">
-      <bpmn2:documentation id="_RAAWVchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzFchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_D7E74CA4-808E-4A3F-8EFD-2BF5F2998831" sourceRef="_F87134FA-BF51-47EE-A8A8-CD763041E47B" targetRef="_EE791BDE-2362-475E-B8C3-980BEE05A149">
-      <bpmn2:documentation id="_RAAWVshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzFshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_39E615E5-0E1D-4404-9FC5-B61BD48809A2" sourceRef="_59E9CC19-5C59-4571-A187-480018725EF5" targetRef="_4586A41D-219F-4378-AB57-8B69BD4F469D">
-      <bpmn2:documentation id="_RAAWV8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IjzF8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_F9103EE6-4FE3-4853-A788-FDDA2DADADD1" sourceRef="_90E346B7-A108-4BEA-ABF1-1218A72D69AC" targetRef="_E5651FBA-C243-4EC5-A0A9-CE6D9AF9CA4F">
-      <bpmn2:documentation id="_RAAWWMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaIMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_2BC4B3A7-3FA0-4CBE-992A-6CCD367D4209" sourceRef="_EE481C88-3264-4302-8EB7-7CB883872387" targetRef="_90E346B7-A108-4BEA-ABF1-1218A72D69AC">
-      <bpmn2:documentation id="_RAAWWchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaIchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_8D9FC383-6C66-4624-99F3-B2938F812746" sourceRef="_4586A41D-219F-4378-AB57-8B69BD4F469D" targetRef="_4FABDF11-42F3-4DB5-84CF-DBABDD07E7A0">
-      <bpmn2:documentation id="_RAAWWshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaIshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_FA180E9B-E17F-484C-8E83-86133672A19A" sourceRef="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9" targetRef="_59E9CC19-5C59-4571-A187-480018725EF5">
-      <bpmn2:documentation id="_RAAWW8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaI8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_CA7CC349-D428-4D08-927F-0892C18A1AEF" sourceRef="_E5651FBA-C243-4EC5-A0A9-CE6D9AF9CA4F" targetRef="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9">
-      <bpmn2:documentation id="_RAAWXMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaJMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_47429A17-EB7E-4215-904B-E62509E11F52" sourceRef="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C" targetRef="_D632955B-B401-4A1B-9B82-C75B10EDB1FE">
-      <bpmn2:documentation id="_RAAWXchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaJchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_30DAFC71-8F8E-47EE-8F7F-D7573AA25989" sourceRef="_EE791BDE-2362-475E-B8C3-980BEE05A149" targetRef="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C">
-      <bpmn2:documentation id="_RAAWXshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaJshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_84EC45D7-69E8-490B-A0BC-89D8003AAAC1" sourceRef="_93FD0279-B762-4237-9934-D53E62994224" targetRef="_EE481C88-3264-4302-8EB7-7CB883872387">
-      <bpmn2:documentation id="_RAAWX8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaJ8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_0ED80612-7114-4FC7-97D4-83B0679126E3" sourceRef="_D632955B-B401-4A1B-9B82-C75B10EDB1FE" targetRef="_93FD0279-B762-4237-9934-D53E62994224">
-      <bpmn2:documentation id="_RAAWYMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaKMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_48A59CCF-9A92-43BD-8BB5-B8285249ED44" sourceRef="_E61F0EDC-B05C-4D2D-808F-7346A93413FD" targetRef="_93FD0279-B762-4237-9934-D53E62994224">
-      <bpmn2:documentation id="_RAAWYchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaKchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_7E3E8F29-7DC8-4167-A0B8-A150765F613C" sourceRef="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176" targetRef="_F87134FA-BF51-47EE-A8A8-CD763041E47B">
-      <bpmn2:documentation id="_RAAWYshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaKshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_CC7578D5-1786-4114-8C2A-40A57777502C" sourceRef="_29D58929-4212-44DE-AF77-0B5590E27D4A" targetRef="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176">
-      <bpmn2:documentation id="_RAAWY8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaK8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
     </bpmn2:sequenceFlow>
     <bpmn2:task id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847" drools:taskName="WebService" name="Hotel Prebooking">
-      <bpmn2:documentation id="_RAAWZMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaLMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Hotel Prebooking]]></drools:metaValue>
@@ -169,7 +170,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_A9D136A8-CC32-4F30-BAB4-80782D444AEF</bpmn2:incoming>
       <bpmn2:outgoing>_3F4955BD-05EA-46B0-8264-B6BC4AE85B34</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAAWZchSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IkaLchhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputX" drools:dtype="String" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputXItem" name="Interface"/>
         <bpmn2:dataInput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputX" drools:dtype="String" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputXItem" name="Mode"/>
         <bpmn2:dataInput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputX" drools:dtype="String" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputXItem" name="Namespace"/>
@@ -177,7 +178,7 @@
         <bpmn2:dataInput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ParameterInputX" drools:dtype="String" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ParameterInputXItem" name="Parameter"/>
         <bpmn2:dataInput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputX" drools:dtype="String" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputXItem" name="Url"/>
         <bpmn2:dataOutput id="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_RAAWZshSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IkaLshhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputX</bpmn2:dataInputRefs>
@@ -185,56 +186,56 @@
           <bpmn2:dataInputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ParameterInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAAWZ8hSEeiTTsL6btxjaw">
+        <bpmn2:outputSet id="_8IkaL8hhEeiv3qq26dBc1w">
           <bpmn2:dataOutputRefs>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAAWaMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaMMhhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWachSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWashSEeiTTsL6btxjaw"><![CDATA[AcmeHotelService]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWa8hSEeiTTsL6btxjaw">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaMchhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaMshhEeiv3qq26dBc1w"><![CDATA[AcmeHotelService]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaM8hhEeiv3qq26dBc1w">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_InterfaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWbMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaNMhhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWbchSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWbshSEeiTTsL6btxjaw"><![CDATA[SYNC]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWb8hSEeiTTsL6btxjaw">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaNchhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaNshhEeiv3qq26dBc1w"><![CDATA[SYNC]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaN8hhEeiv3qq26dBc1w">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ModeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWcMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaOMhhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWcchSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWcshSEeiTTsL6btxjaw"><![CDATA[urn:specialtripsagency.acme.org:hotelservice]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWc8hSEeiTTsL6btxjaw">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaOchhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaOshhEeiv3qq26dBc1w"><![CDATA[urn:specialtripsagency.acme.org:hotelservice]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaO8hhEeiv3qq26dBc1w">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_NamespaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWdMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaPMhhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_OperationInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWdchSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWdshSEeiTTsL6btxjaw"><![CDATA[bookHotel]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWd8hSEeiTTsL6btxjaw">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_OperationInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaPchhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaPshhEeiv3qq26dBc1w"><![CDATA[bookHotel]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaP8hhEeiv3qq26dBc1w">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_OperationInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWeMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaQMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_booking</bpmn2:sourceRef>
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ParameterInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWechSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaQchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWeshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWe8hSEeiTTsL6btxjaw"><![CDATA[http://#{System.getProperty("host.hotelservice","localhost")}:8080/hotel-service-1.0/AcmeHotelService?wsdl]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWfMhSEeiTTsL6btxjaw">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaQshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaQ8hhEeiv3qq26dBc1w"><![CDATA[http://#{System.getProperty("host.hotelservice","localhost")}:8080/hotel-service-1.0/AcmeHotelService?wsdl]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaRMhhEeiv3qq26dBc1w">_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAAWfchSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IkaRchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_2087CF93-E5E5-42F4-BF45-3FFBFCF20847_ResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>hotelBookingResponse</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:scriptTask id="_E61F0EDC-B05C-4D2D-808F-7346A93413FD" name="Process response" scriptFormat="http://www.java.com/java">
-      <bpmn2:documentation id="_RAAWfshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaRshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Process response]]></drools:metaValue>
@@ -246,7 +247,7 @@
 kcontext.setVariable("hotel_bookingStatus", hotelBookingResponse.getStatus());]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:scriptTask id="_D632955B-B401-4A1B-9B82-C75B10EDB1FE" name="Process response" scriptFormat="http://www.java.com/java">
-      <bpmn2:documentation id="_RAAWf8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaR8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Process response]]></drools:metaValue>
@@ -258,13 +259,13 @@ kcontext.setVariable("hotel_bookingStatus", hotelBookingResponse.getStatus());]]
 kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:parallelGateway id="_EE791BDE-2362-475E-B8C3-980BEE05A149" gatewayDirection="Diverging">
-      <bpmn2:documentation id="_RAAWgMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaSMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_D7E74CA4-808E-4A3F-8EFD-2BF5F2998831</bpmn2:incoming>
       <bpmn2:outgoing>_30DAFC71-8F8E-47EE-8F7F-D7573AA25989</bpmn2:outgoing>
       <bpmn2:outgoing>_A9D136A8-CC32-4F30-BAB4-80782D444AEF</bpmn2:outgoing>
     </bpmn2:parallelGateway>
     <bpmn2:task id="_254C82B1-5180-4F9A-996C-9A3835AD55D2" drools:taskName="WebService" name="Hotel Booking">
-      <bpmn2:documentation id="_RAAWgchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaSchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Hotel Booking]]></drools:metaValue>
@@ -272,7 +273,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_195B17DA-4AB4-49D1-8A47-C8938E18C267</bpmn2:incoming>
       <bpmn2:outgoing>_DEA92570-3388-4ABF-A887-C62D03E696D1</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAAWgshSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IkaSshhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputX" drools:dtype="String" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputXItem" name="Interface"/>
         <bpmn2:dataInput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputX" drools:dtype="String" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputXItem" name="Mode"/>
         <bpmn2:dataInput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputX" drools:dtype="String" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputXItem" name="Namespace"/>
@@ -280,7 +281,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         <bpmn2:dataInput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_ParameterInputX" drools:dtype="String" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_ParameterInputXItem" name="Parameter"/>
         <bpmn2:dataInput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputX" drools:dtype="String" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputXItem" name="Url"/>
         <bpmn2:dataOutput id="_254C82B1-5180-4F9A-996C-9A3835AD55D2_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__254C82B1-5180-4F9A-996C-9A3835AD55D2_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_RAAWg8hSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IkaS8hhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputX</bpmn2:dataInputRefs>
@@ -288,72 +289,72 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
           <bpmn2:dataInputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ParameterInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAAWhMhSEeiTTsL6btxjaw">
+        <bpmn2:outputSet id="_8IkaTMhhEeiv3qq26dBc1w">
           <bpmn2:dataOutputRefs>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAAWhchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaTchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWhshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWh8hSEeiTTsL6btxjaw"><![CDATA[AcmeHotelService]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWiMhSEeiTTsL6btxjaw">_254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaTshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaT8hhEeiv3qq26dBc1w"><![CDATA[AcmeHotelService]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaUMhhEeiv3qq26dBc1w">_254C82B1-5180-4F9A-996C-9A3835AD55D2_InterfaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWichSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaUchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWishSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWi8hSEeiTTsL6btxjaw"><![CDATA[SYNC]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWjMhSEeiTTsL6btxjaw">_254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaUshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaU8hhEeiv3qq26dBc1w"><![CDATA[SYNC]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaVMhhEeiv3qq26dBc1w">_254C82B1-5180-4F9A-996C-9A3835AD55D2_ModeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWjchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaVchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWjshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWj8hSEeiTTsL6btxjaw"><![CDATA[urn:specialtripsagency.acme.org:hotelservice]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWkMhSEeiTTsL6btxjaw">_254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaVshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaV8hhEeiv3qq26dBc1w"><![CDATA[urn:specialtripsagency.acme.org:hotelservice]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaWMhhEeiv3qq26dBc1w">_254C82B1-5180-4F9A-996C-9A3835AD55D2_NamespaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWkchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaWchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_OperationInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWkshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWk8hSEeiTTsL6btxjaw"><![CDATA[bookHotel]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWlMhSEeiTTsL6btxjaw">_254C82B1-5180-4F9A-996C-9A3835AD55D2_OperationInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaWshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaW8hhEeiv3qq26dBc1w"><![CDATA[bookHotel]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaXMhhEeiv3qq26dBc1w">_254C82B1-5180-4F9A-996C-9A3835AD55D2_OperationInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWlchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaXchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_booking</bpmn2:sourceRef>
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ParameterInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAAWlshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaXshhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAAWl8hSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAAWmMhSEeiTTsL6btxjaw"><![CDATA[http://#{System.getProperty("host.hotelservice","localhost")}:8080/hotel-service-1.0/AcmeHotelService?wsdl]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAAWmchSEeiTTsL6btxjaw">_254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IkaX8hhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaYMhhEeiv3qq26dBc1w"><![CDATA[http://#{System.getProperty("host.hotelservice","localhost")}:8080/hotel-service-1.0/AcmeHotelService?wsdl]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaYchhEeiv3qq26dBc1w">_254C82B1-5180-4F9A-996C-9A3835AD55D2_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAAWmshSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IkaYshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_254C82B1-5180-4F9A-996C-9A3835AD55D2_ResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>hotelBookingResponse</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:startEvent id="_29D58929-4212-44DE-AF77-0B5590E27D4A">
-      <bpmn2:documentation id="_RAAWm8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaY8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:outgoing>_CC7578D5-1786-4114-8C2A-40A57777502C</bpmn2:outgoing>
     </bpmn2:startEvent>
     <bpmn2:parallelGateway id="_E5651FBA-C243-4EC5-A0A9-CE6D9AF9CA4F" gatewayDirection="Diverging">
-      <bpmn2:documentation id="_RAAWnMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaZMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_F9103EE6-4FE3-4853-A788-FDDA2DADADD1</bpmn2:incoming>
       <bpmn2:outgoing>_CA7CC349-D428-4D08-927F-0892C18A1AEF</bpmn2:outgoing>
       <bpmn2:outgoing>_195B17DA-4AB4-49D1-8A47-C8938E18C267</bpmn2:outgoing>
     </bpmn2:parallelGateway>
     <bpmn2:parallelGateway id="_59E9CC19-5C59-4571-A187-480018725EF5" gatewayDirection="Converging">
-      <bpmn2:documentation id="_RAAWnchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaZchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_FA180E9B-E17F-484C-8E83-86133672A19A</bpmn2:incoming>
       <bpmn2:incoming>_DEA92570-3388-4ABF-A887-C62D03E696D1</bpmn2:incoming>
       <bpmn2:outgoing>_39E615E5-0E1D-4404-9FC5-B61BD48809A2</bpmn2:outgoing>
     </bpmn2:parallelGateway>
     <bpmn2:callActivity id="_F87134FA-BF51-47EE-A8A8-CD763041E47B" drools:independent="false" drools:waitForCompletion="true" name="Prebooking WS Model" calledElement="descriptor-lab-process-kjar.ws-model-transformation">
-      <bpmn2:documentation id="_RAAWnshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkaZshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Prebooking WS Model]]></drools:metaValue>
@@ -361,7 +362,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_7E3E8F29-7DC8-4167-A0B8-A150765F613C</bpmn2:incoming>
       <bpmn2:outgoing>_D7E74CA4-808E-4A3F-8EFD-2BF5F2998831</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAAWn8hSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IkaZ8hhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_applicantNameInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_applicantNameInputXItem" name="applicantName"/>
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_carrierInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_carrierInputXItem" name="flight_carrier"/>
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_flightNrInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_flightNrInputXItem" name="flight_flightNr"/>
@@ -375,10 +376,10 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_expiryInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_expiryInputXItem" name="cc_expiry"/>
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_amountInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_amountInputXItem" name="cc_amount"/>
         <bpmn2:dataInput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputX" drools:dtype="String" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputXItem" name="service_type"/>
-        <bpmn2:dataOutput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_flightBookingOutputX" drools:dtype="org.acme.specialtripsagency.flightservice.Booking" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flightBookingOutputXItem" name="flightBooking"/>
-        <bpmn2:dataOutput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotelBookingOutputX" drools:dtype="org.acme.specialtripsagency.hotelservice.HotelBooking" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_hotelBookingOutputXItem" name="hotelBooking"/>
+        <bpmn2:dataOutput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_bookingOutputX" drools:dtype="org.acme.specialtripsagency.flightservice.Booking" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_bookingOutputXItem" name="flight_booking"/>
+        <bpmn2:dataOutput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_bookingOutputX" drools:dtype="org.acme.specialtripsagency.hotelservice.HotelBooking" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_bookingOutputXItem" name="hotel_booking"/>
         <bpmn2:dataOutput id="_F87134FA-BF51-47EE-A8A8-CD763041E47B_paymentOutputX" drools:dtype="org.specialtripsagency.PaymentObject" itemSubjectRef="__F87134FA-BF51-47EE-A8A8-CD763041E47B_paymentOutputXItem" name="payment"/>
-        <bpmn2:inputSet id="_RAAWoMhSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IkaaMhhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_applicantNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_carrierInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_flightNrInputX</bpmn2:dataInputRefs>
@@ -393,82 +394,82 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
           <bpmn2:dataInputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_amountInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAA9YMhSEeiTTsL6btxjaw">
-          <bpmn2:dataOutputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flightBookingOutputX</bpmn2:dataOutputRefs>
-          <bpmn2:dataOutputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotelBookingOutputX</bpmn2:dataOutputRefs>
+        <bpmn2:outputSet id="_8IkaachhEeiv3qq26dBc1w">
+          <bpmn2:dataOutputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_bookingOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_bookingOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_F87134FA-BF51-47EE-A8A8-CD763041E47B_paymentOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAA9YchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkaashhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>applicantName</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_applicantNameInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9YshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8Ikaa8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_carrier</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_carrierInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9Y8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkabMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_flightNr</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_flightNrInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9ZMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkabchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_id</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_idInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9ZchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkabshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_location</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_locationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9ZshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8Ikab8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_roomType</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_roomTypeInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9Z8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkacMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_checkIn</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_checkInInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9aMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkacchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_checkOut</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_checkOutInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9achSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkacshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>cc_name</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_nameInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9ashSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8Ikac8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>cc_number</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_numberInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9a8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkadMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>cc_expiry</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_expiryInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9bMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkadchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>cc_amount</bpmn2:sourceRef>
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_cc_amountInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9bchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IkadshhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9bshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9b8hSEeiTTsL6btxjaw"><![CDATA[PREBOOKING]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9cMhSEeiTTsL6btxjaw">_F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8Ikad8hhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IkaeMhhEeiv3qq26dBc1w"><![CDATA[PREBOOKING]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IkaechhEeiv3qq26dBc1w">_F87134FA-BF51-47EE-A8A8-CD763041E47B_service_typeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9cchSEeiTTsL6btxjaw">
-        <bpmn2:sourceRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flightBookingOutputX</bpmn2:sourceRef>
+      <bpmn2:dataOutputAssociation id="_8IkaeshhEeiv3qq26dBc1w">
+        <bpmn2:sourceRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_flight_bookingOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>flight_booking</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9cshSEeiTTsL6btxjaw">
-        <bpmn2:sourceRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotelBookingOutputX</bpmn2:sourceRef>
+      <bpmn2:dataOutputAssociation id="_8Ikae8hhEeiv3qq26dBc1w">
+        <bpmn2:sourceRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_hotel_bookingOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>hotel_booking</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9c8hSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IkafMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_F87134FA-BF51-47EE-A8A8-CD763041E47B_paymentOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>payment</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:callActivity>
     <bpmn2:scriptTask id="_4586A41D-219F-4378-AB57-8B69BD4F469D" name="Log Finished" scriptFormat="http://www.java.com/java">
-      <bpmn2:documentation id="_RAA9dMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IkafchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Log Finished]]></drools:metaValue>
@@ -479,7 +480,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       <bpmn2:script><![CDATA[System.out.println("travel-booking:  finished  process instance id = "+kcontext.getProcessInstance().getId()); ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:callActivity id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC" drools:independent="false" drools:waitForCompletion="true" name="Booking WS Model" calledElement="descriptor-lab-process-kjar.ws-model-transformation">
-      <bpmn2:documentation id="_RAA9dchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBMMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Booking WS Model]]></drools:metaValue>
@@ -487,7 +488,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_2BC4B3A7-3FA0-4CBE-992A-6CCD367D4209</bpmn2:incoming>
       <bpmn2:outgoing>_F9103EE6-4FE3-4853-A788-FDDA2DADADD1</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAA9dshSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IlBMchhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_applicantNameInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_applicantNameInputXItem" name="applicantName"/>
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_carrierInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_carrierInputXItem" name="flight_carrier"/>
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_flightNrInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_flightNrInputXItem" name="flight_flightNr"/>
@@ -500,9 +501,10 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkOutInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkOutInputXItem" name="hotel_checkOut"/>
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingIdInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingIdInputXItem" name="hotel_bookingId"/>
         <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputX" drools:dtype="String" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputXItem" name="service_type"/>
-        <bpmn2:dataOutput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flightBookingOutputX" drools:dtype="org.acme.specialtripsagency.flightservice.Booking" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flightBookingOutputXItem" name="flightBooking"/>
-        <bpmn2:dataOutput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotelBookingOutputX" drools:dtype="org.acme.specialtripsagency.hotelservice.HotelBooking" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotelBookingOutputXItem" name="hotelBooking"/>
-        <bpmn2:inputSet id="_RAA9d8hSEeiTTsL6btxjaw">
+        <bpmn2:dataInput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_paymentInputX" drools:dtype="org.specialtripsagency.PaymentObject" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_paymentInputXItem" name="payment"/>
+        <bpmn2:dataOutput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingOutputX" drools:dtype="org.acme.specialtripsagency.flightservice.Booking" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingOutputXItem" name="flight_booking"/>
+        <bpmn2:dataOutput id="_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingOutputX" drools:dtype="org.acme.specialtripsagency.hotelservice.HotelBooking" itemSubjectRef="__90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingOutputXItem" name="hotel_booking"/>
+        <bpmn2:inputSet id="_8IlBMshhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_applicantNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_carrierInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_flightNrInputX</bpmn2:dataInputRefs>
@@ -515,74 +517,79 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkOutInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingIdInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_paymentInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAA9eMhSEeiTTsL6btxjaw">
-          <bpmn2:dataOutputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flightBookingOutputX</bpmn2:dataOutputRefs>
-          <bpmn2:dataOutputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotelBookingOutputX</bpmn2:dataOutputRefs>
+        <bpmn2:outputSet id="_8IlBM8hhEeiv3qq26dBc1w">
+          <bpmn2:dataOutputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAA9echSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBNMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>applicantName</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_applicantNameInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9eshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBNchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_carrier</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_carrierInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9e8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBNshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_flightNr</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_flightNrInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9fMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBN8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_travelClass</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_travelClassInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9fchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBOMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_bookingId</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingIdInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9fshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBOchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_id</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_idInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9f8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBOshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_location</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_locationInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9gMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBO8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_roomType</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_roomTypeInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9gchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBPMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_checkIn</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkInInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9gshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBPchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_checkOut</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_checkOutInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9g8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBPshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>hotel_bookingId</bpmn2:sourceRef>
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingIdInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9hMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBP8hhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9hchSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9hshSEeiTTsL6btxjaw"><![CDATA[BOOKING]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9h8hSEeiTTsL6btxjaw">_90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBQMhhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBQchhEeiv3qq26dBc1w"><![CDATA[BOOKING]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBQshhEeiv3qq26dBc1w">_90E346B7-A108-4BEA-ABF1-1218A72D69AC_service_typeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9iMhSEeiTTsL6btxjaw">
-        <bpmn2:sourceRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flightBookingOutputX</bpmn2:sourceRef>
+      <bpmn2:dataInputAssociation id="_8IlBQ8hhEeiv3qq26dBc1w">
+        <bpmn2:sourceRef>payment</bpmn2:sourceRef>
+        <bpmn2:targetRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_paymentInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_8IlBRMhhEeiv3qq26dBc1w">
+        <bpmn2:sourceRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_flight_bookingOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>flight_booking</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9ichSEeiTTsL6btxjaw">
-        <bpmn2:sourceRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotelBookingOutputX</bpmn2:sourceRef>
+      <bpmn2:dataOutputAssociation id="_8IlBRchhEeiv3qq26dBc1w">
+        <bpmn2:sourceRef>_90E346B7-A108-4BEA-ABF1-1218A72D69AC_hotel_bookingOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>hotel_booking</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:callActivity>
     <bpmn2:task id="_EE481C88-3264-4302-8EB7-7CB883872387" drools:taskName="CreditCardPaymentService" name="Payment Service">
-      <bpmn2:documentation id="_RAA9ishSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBRshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Payment Service]]></drools:metaValue>
@@ -590,31 +597,31 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_84EC45D7-69E8-490B-A0BC-89D8003AAAC1</bpmn2:incoming>
       <bpmn2:outgoing>_2BC4B3A7-3FA0-4CBE-992A-6CCD367D4209</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAA9i8hSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IlBR8hhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_EE481C88-3264-4302-8EB7-7CB883872387_paymentInputX" drools:dtype="java.lang.Object" itemSubjectRef="__EE481C88-3264-4302-8EB7-7CB883872387_paymentInputXItem" name="payment"/>
         <bpmn2:dataOutput id="_EE481C88-3264-4302-8EB7-7CB883872387_paymentResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__EE481C88-3264-4302-8EB7-7CB883872387_paymentResultOutputXItem" name="paymentResult"/>
-        <bpmn2:inputSet id="_RAA9jMhSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IlBSMhhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_EE481C88-3264-4302-8EB7-7CB883872387_paymentInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAA9jchSEeiTTsL6btxjaw">
+        <bpmn2:outputSet id="_8IlBSchhEeiv3qq26dBc1w">
           <bpmn2:dataOutputRefs>_EE481C88-3264-4302-8EB7-7CB883872387_paymentResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAA9jshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBSshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>payment</bpmn2:sourceRef>
         <bpmn2:targetRef>_EE481C88-3264-4302-8EB7-7CB883872387_paymentInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9j8hSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IlBS8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_EE481C88-3264-4302-8EB7-7CB883872387_paymentResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>payment</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:endEvent id="_4FABDF11-42F3-4DB5-84CF-DBABDD07E7A0">
-      <bpmn2:documentation id="_RAA9kMhSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBTMhhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_8D9FC383-6C66-4624-99F3-B2938F812746</bpmn2:incoming>
     </bpmn2:endEvent>
     <bpmn2:task id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9" drools:taskName="WebService" name="Flight Booking">
-      <bpmn2:documentation id="_RAA9kchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBTchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Flight Booking]]></drools:metaValue>
@@ -622,7 +629,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_CA7CC349-D428-4D08-927F-0892C18A1AEF</bpmn2:incoming>
       <bpmn2:outgoing>_FA180E9B-E17F-484C-8E83-86133672A19A</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAA9kshSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IlBTshhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputX" drools:dtype="String" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputXItem" name="Interface"/>
         <bpmn2:dataInput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputX" drools:dtype="String" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputXItem" name="Mode"/>
         <bpmn2:dataInput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputX" drools:dtype="String" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputXItem" name="Namespace"/>
@@ -630,7 +637,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         <bpmn2:dataInput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ParameterInputX" drools:dtype="String" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ParameterInputXItem" name="Parameter"/>
         <bpmn2:dataInput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputX" drools:dtype="String" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputXItem" name="Url"/>
         <bpmn2:dataOutput id="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_RAA9k8hSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IlBT8hhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputX</bpmn2:dataInputRefs>
@@ -638,56 +645,56 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
           <bpmn2:dataInputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ParameterInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAA9lMhSEeiTTsL6btxjaw">
+        <bpmn2:outputSet id="_8IlBUMhhEeiv3qq26dBc1w">
           <bpmn2:dataOutputRefs>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAA9lchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBUchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9lshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9l8hSEeiTTsL6btxjaw"><![CDATA[AcmeFlightService]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9mMhSEeiTTsL6btxjaw">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBUshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBU8hhEeiv3qq26dBc1w"><![CDATA[AcmeFlightService]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBVMhhEeiv3qq26dBc1w">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_InterfaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9mchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBVchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9mshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9m8hSEeiTTsL6btxjaw"><![CDATA[SYNC]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9nMhSEeiTTsL6btxjaw">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBVshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBV8hhEeiv3qq26dBc1w"><![CDATA[SYNC]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBWMhhEeiv3qq26dBc1w">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ModeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9nchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBWchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9nshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9n8hSEeiTTsL6btxjaw"><![CDATA[urn:specialtripsagency.acme.org:flightservice]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9oMhSEeiTTsL6btxjaw">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBWshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBW8hhEeiv3qq26dBc1w"><![CDATA[urn:specialtripsagency.acme.org:flightservice]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBXMhhEeiv3qq26dBc1w">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_NamespaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9ochSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBXchhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_OperationInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9oshSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9o8hSEeiTTsL6btxjaw"><![CDATA[bookFlight]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9pMhSEeiTTsL6btxjaw">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_OperationInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBXshhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBX8hhEeiv3qq26dBc1w"><![CDATA[bookFlight]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBYMhhEeiv3qq26dBc1w">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_OperationInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9pchSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBYchhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_booking</bpmn2:sourceRef>
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ParameterInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9pshSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBYshhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9p8hSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9qMhSEeiTTsL6btxjaw"><![CDATA[http://#{System.getProperty("host.flightservice","localhost")}:8080/flight-service-1.0/AcmeFlightService?wsdl]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9qchSEeiTTsL6btxjaw">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBY8hhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBZMhhEeiv3qq26dBc1w"><![CDATA[http://#{System.getProperty("host.flightservice","localhost")}:8080/flight-service-1.0/AcmeFlightService?wsdl]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBZchhEeiv3qq26dBc1w">_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9qshSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IlBZshhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9_ResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>flightBookingResponse</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:task id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C" drools:taskName="WebService" name="Flight Prebooking">
-      <bpmn2:documentation id="_RAA9q8hSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBZ8hhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Flight Prebooking]]></drools:metaValue>
@@ -695,7 +702,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_30DAFC71-8F8E-47EE-8F7F-D7573AA25989</bpmn2:incoming>
       <bpmn2:outgoing>_47429A17-EB7E-4215-904B-E62509E11F52</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_RAA9rMhSEeiTTsL6btxjaw">
+      <bpmn2:ioSpecification id="_8IlBaMhhEeiv3qq26dBc1w">
         <bpmn2:dataInput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputX" drools:dtype="String" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputXItem" name="Interface"/>
         <bpmn2:dataInput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputX" drools:dtype="String" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputXItem" name="Mode"/>
         <bpmn2:dataInput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputX" drools:dtype="String" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputXItem" name="Namespace"/>
@@ -703,7 +710,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         <bpmn2:dataInput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ParameterInputX" drools:dtype="String" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ParameterInputXItem" name="Parameter"/>
         <bpmn2:dataInput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputX" drools:dtype="String" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputXItem" name="Url"/>
         <bpmn2:dataOutput id="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_RAA9rchSEeiTTsL6btxjaw">
+        <bpmn2:inputSet id="_8IlBachhEeiv3qq26dBc1w">
           <bpmn2:dataInputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputX</bpmn2:dataInputRefs>
@@ -711,62 +718,62 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
           <bpmn2:dataInputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ParameterInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_RAA9rshSEeiTTsL6btxjaw">
+        <bpmn2:outputSet id="_8IlBashhEeiv3qq26dBc1w">
           <bpmn2:dataOutputRefs>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_RAA9r8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBa8hhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9sMhSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9schSEeiTTsL6btxjaw"><![CDATA[AcmeFlightService]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9sshSEeiTTsL6btxjaw">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBbMhhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBbchhEeiv3qq26dBc1w"><![CDATA[AcmeFlightService]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBbshhEeiv3qq26dBc1w">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_InterfaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9s8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBb8hhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9tMhSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9tchSEeiTTsL6btxjaw"><![CDATA[SYNC]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9tshSEeiTTsL6btxjaw">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBcMhhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBcchhEeiv3qq26dBc1w"><![CDATA[SYNC]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBcshhEeiv3qq26dBc1w">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ModeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9t8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBc8hhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9uMhSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9uchSEeiTTsL6btxjaw"><![CDATA[urn:specialtripsagency.acme.org:flightservice]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9ushSEeiTTsL6btxjaw">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBdMhhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBdchhEeiv3qq26dBc1w"><![CDATA[urn:specialtripsagency.acme.org:flightservice]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBdshhEeiv3qq26dBc1w">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_NamespaceInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9u8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBd8hhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_OperationInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9vMhSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9vchSEeiTTsL6btxjaw"><![CDATA[bookFlight]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9vshSEeiTTsL6btxjaw">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_OperationInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBeMhhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBechhEeiv3qq26dBc1w"><![CDATA[bookFlight]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBeshhEeiv3qq26dBc1w">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_OperationInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9v8hSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBe8hhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>flight_booking</bpmn2:sourceRef>
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ParameterInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_RAA9wMhSEeiTTsL6btxjaw">
+      <bpmn2:dataInputAssociation id="_8IlBfMhhEeiv3qq26dBc1w">
         <bpmn2:targetRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_RAA9wchSEeiTTsL6btxjaw">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_RAA9wshSEeiTTsL6btxjaw"><![CDATA[http://#{System.getProperty("host.flightservice","localhost")}:8080/flight-service-1.0/AcmeFlightService?wsdl]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_RAA9w8hSEeiTTsL6btxjaw">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputX</bpmn2:to>
+        <bpmn2:assignment id="_8IlBfchhEeiv3qq26dBc1w">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_8IlBfshhEeiv3qq26dBc1w"><![CDATA[http://#{System.getProperty("host.flightservice","localhost")}:8080/flight-service-1.0/AcmeFlightService?wsdl]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_8IlBf8hhEeiv3qq26dBc1w">_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_RAA9xMhSEeiTTsL6btxjaw">
+      <bpmn2:dataOutputAssociation id="_8IlBgMhhEeiv3qq26dBc1w">
         <bpmn2:sourceRef>_22948989-8DED-4CFF-9DB1-A9A6E3A7420C_ResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>flightBookingResponse</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:parallelGateway id="_93FD0279-B762-4237-9934-D53E62994224" gatewayDirection="Converging">
-      <bpmn2:documentation id="_RAA9xchSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBgchhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:incoming>_48A59CCF-9A92-43BD-8BB5-B8285249ED44</bpmn2:incoming>
       <bpmn2:incoming>_0ED80612-7114-4FC7-97D4-83B0679126E3</bpmn2:incoming>
       <bpmn2:outgoing>_84EC45D7-69E8-490B-A0BC-89D8003AAAC1</bpmn2:outgoing>
     </bpmn2:parallelGateway>
     <bpmn2:scriptTask id="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176" name="Log Entry" scriptFormat="http://www.java.com/java">
-      <bpmn2:documentation id="_RAA9xshSEeiTTsL6btxjaw"><![CDATA[]]></bpmn2:documentation>
+      <bpmn2:documentation id="_8IlBgshhEeiv3qq26dBc1w"><![CDATA[]]></bpmn2:documentation>
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Log Entry]]></drools:metaValue>
@@ -777,8 +784,8 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       <bpmn2:script><![CDATA[System.out.println("\n\ntravel-booking:  onEntry()  process instance id = "+kcontext.getProcessInstance().getId());  ]]></bpmn2:script>
     </bpmn2:scriptTask>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_RAA9x8hSEeiTTsL6btxjaw">
-    <bpmndi:BPMNPlane id="_RAA9yMhSEeiTTsL6btxjaw" bpmnElement="descriptor-lab-process-kjar.travel-booking">
+  <bpmndi:BPMNDiagram id="_8IlBg8hhEeiv3qq26dBc1w">
+    <bpmndi:BPMNPlane id="_8IlBhMhhEeiv3qq26dBc1w" bpmnElement="descriptor-lab-process-kjar.travel-booking">
       <bpmndi:BPMNShape id="shape__710CA6DC-EC99-4CAB-B4A7-CC2FC7376176" bpmnElement="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176">
         <dc:Bounds height="102.0" width="154.0" x="222.0" y="181.0"/>
       </bpmndi:BPMNShape>
@@ -912,12 +919,12 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_RAA9ychSEeiTTsL6btxjaw" type="BPSimData">
+  <bpmn2:relationship id="_8IloQMhhEeiv3qq26dBc1w" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176" id="_RAA9yshSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_710CA6DC-EC99-4CAB-B4A7-CC2FC7376176" id="_8IloQchhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -937,7 +944,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C" id="_RAA9y8hSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_22948989-8DED-4CFF-9DB1-A9A6E3A7420C" id="_8IloQshhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -957,7 +964,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9" id="_RAA9zMhSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_DF7EC7B0-CA48-4EAC-9F23-AEE40FC752B9" id="_8IloQ8hhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -977,7 +984,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_EE481C88-3264-4302-8EB7-7CB883872387" id="_RAA9zchSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_EE481C88-3264-4302-8EB7-7CB883872387" id="_8IloRMhhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -997,7 +1004,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_90E346B7-A108-4BEA-ABF1-1218A72D69AC" id="_RAA9zshSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_90E346B7-A108-4BEA-ABF1-1218A72D69AC" id="_8IloRchhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1017,7 +1024,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_4586A41D-219F-4378-AB57-8B69BD4F469D" id="_RAA9z8hSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_4586A41D-219F-4378-AB57-8B69BD4F469D" id="_8IloRshhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1037,7 +1044,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F87134FA-BF51-47EE-A8A8-CD763041E47B" id="_RAA90MhSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F87134FA-BF51-47EE-A8A8-CD763041E47B" id="_8IloR8hhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1057,34 +1064,14 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_29D58929-4212-44DE-AF77-0B5590E27D4A" id="_RAA90chSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_29D58929-4212-44DE-AF77-0B5590E27D4A" id="_8IloSMhhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_254C82B1-5180-4F9A-996C-9A3835AD55D2" id="_RAA90shSEeiTTsL6btxjaw">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
-              <bpsim:Availability xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Availability>
-              <bpsim:Quantity xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Quantity>
-            </bpsim:ResourceParameters>
-            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
-              <bpsim:UnitCost xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:UnitCost>
-            </bpsim:CostParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D632955B-B401-4A1B-9B82-C75B10EDB1FE" id="_RAA908hSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_254C82B1-5180-4F9A-996C-9A3835AD55D2" id="_8IloSchhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1104,7 +1091,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E61F0EDC-B05C-4D2D-808F-7346A93413FD" id="_RAA91MhSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D632955B-B401-4A1B-9B82-C75B10EDB1FE" id="_8IloSshhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1124,7 +1111,27 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847" id="_RAA91chSEeiTTsL6btxjaw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E61F0EDC-B05C-4D2D-808F-7346A93413FD" id="_8IloS8hhEeiv3qq26dBc1w">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2087CF93-E5E5-42F4-BF45-3FFBFCF20847" id="_8IloTMhhEeiv3qq26dBc1w">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1147,7 +1154,7 @@ kcontext.setVariable("flight_bookingStatus", flightBookingResponse.getStatus());
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_RAAWUMhSEeiTTsL6btxjaw</bpmn2:source>
-    <bpmn2:target>_RAAWUMhSEeiTTsL6btxjaw</bpmn2:target>
+    <bpmn2:source>_8IjzEMhhEeiv3qq26dBc1w</bpmn2:source>
+    <bpmn2:target>_8IjzEMhhEeiv3qq26dBc1w</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
