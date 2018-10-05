@@ -3,9 +3,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>redhat</id>
-        <url>https://maven.repository.redhat.com/ga/</url>
-        <source>PROJECT</source>
+        <id>local</id>
+        <url>/home/dtorresf/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -14,14 +14,6 @@
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/home/jboss/.m2/repository</url>
-        <source>LOCAL</source>
       </metadata>
     </repository>
   </repositories>
