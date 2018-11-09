@@ -4,63 +4,61 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.gpte.bpms-advanced</groupId>
   <artifactId>policyquote-process-kjar</artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
+  <packaging>kjar</packaging>
   <name>policyquote-process-kjar</name>
-  <repositories>
-    <repository>
-      <id>redhat-ga-repository</id>
-      <name>redhat-ga-repository</name>
-      <url>http://maven.repository.redhat.com/ga/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>redhat</id>
-      <name>Redhat Plugin Repository</name>
-      <url>http://maven.repository.redhat.com/ga/</url>
-      <layout>default</layout>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-    <pluginRepository>
-      <id>central</id>
-      <name>Maven Plugin Repository</name>
-      <url>http://repo1.maven.org/maven2</url>
-      <layout>default</layout>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-maven-plugin</artifactId>
-        <version>6.5.0.Final-redhat-2</version>
-        <extensions>true</extensions>
-      </plugin>
-    </plugins>
-  </build>
+  <description></description>
   <dependencies>
+    <dependency>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-internal</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-core</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-persistence-jaxb</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>com.redhat.gpte.bpms-advanced</groupId>
       <artifactId>policyquote-datamodel</artifactId>
       <version>1.0</version>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-maven-plugin</artifactId>
+        <version>7.11.0.Final-redhat-00003</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
