@@ -2,28 +2,53 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.redhat.gpte.bpms-advanced</groupId>
+  <groupId>org.acme</groupId>
   <artifactId>kie-server-lab-kjar</artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>kie-server-lab-kjar</name>
+  <description>KIE Server API labs</description>
   <dependencies>
     <dependency>
-      <groupId>org.acme.special-trips-agency-ws</groupId>
-      <artifactId>data-model</artifactId>
-      <version>1.0</version>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.10</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.7.0.Final-redhat-10</version>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-core</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-persistence-jaxb</artifactId>
+      <version>7.11.0.Final-redhat-00003</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.7.0.Final-redhat-10</version>
+      <version>7.11.0.Final-redhat-00003</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.acme.special-trips-agency-ws</groupId>
+      <artifactId>data-model</artifactId>
+      <version>1.0</version>
     </dependency>
   </dependencies>
   <build>
@@ -31,31 +56,9 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.7.0.Final-redhat-10</version>
+        <version>7.11.0.Final-redhat-00003</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
-  <repositories>
-    <repository>
-      <id>redhat</id>
-      <name>redhat-ga</name>
-      <url>https://maven.repository.redhat.com/ga/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>redhat-ga-repository</id>
-      <name>Red Hat GA repository</name>
-      <url>http://maven.repository.redhat.com/ga/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
 </project>
