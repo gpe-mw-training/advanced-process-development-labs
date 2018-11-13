@@ -3,32 +3,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-plugins</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local-lan-repo</id>
-        <url>http://172.31.99.188:11080/nexus</url>
+        <id>nexus</id>
+        <url>http://172.17.42.3:8080/nexus/content/groups/public</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -36,40 +12,8 @@
       <include>true</include>
       <metadata>
         <id>local</id>
-        <url>/home/dtorresf/.m2/repository</url>
+        <url>/opt/jboss/data/m2/repository</url>
         <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-snapshot-plugins</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>fuse-public</id>
-        <url>https://repository.jboss.org/nexus/content/groups/fs-public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-enterprise</id>
-        <url>http://maven.repository.redhat.com/ga</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-snapshot</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
