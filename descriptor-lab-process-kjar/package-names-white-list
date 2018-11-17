@@ -1,1 +1,2 @@
-com.redhat.gpte.descriptor_lab_process_kjar.**
+org.acme.specialtripsagency.hotelservice
+org.acme.specialtripsagency.flightservice
