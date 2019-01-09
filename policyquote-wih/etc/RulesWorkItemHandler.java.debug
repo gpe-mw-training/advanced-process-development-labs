@@ -23,10 +23,10 @@ public class RulesWorkItemHandler implements WorkItemHandler, Cacheable {
     private KieContainer kieContainer;
     private KieScanner kieScanner;
     
-    public RulesWorkItemHandler(String releaseIdStr) {
+    public RulesWorkItemHandler(String releaseIdStr, ClassLoader classLoader) {
         releaseId = new ReleaseIdImpl(releaseIdStr);
         KieServices ks = KieServices.Factory.get();
-        kieContainer = ks.newKieContainer(releaseId);
+        kieContainer = ks.newKieContainer(releaseId, classLoader);
 
         // Iterate and print list of rules loaded in KieBase
         Collection<KiePackage> kPackages = kieContainer.getKieBase().getKiePackages();

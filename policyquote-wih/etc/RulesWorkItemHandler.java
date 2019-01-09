@@ -17,10 +17,10 @@ public class RulesWorkItemHandler implements WorkItemHandler, Cacheable {
     private KieContainer kieContainer;
     private KieScanner kieScanner;
     
-    public RulesWorkItemHandler(String releaseIdStr) {
+    public RulesWorkItemHandler(String releaseIdStr, ClassLoader classLoader) {
         releaseId = new ReleaseIdImpl(releaseIdStr);
         KieServices ks = KieServices.Factory.get();
-        kieContainer = ks.newKieContainer(releaseId);
+        kieContainer = ks.newKieContainer(releaseId, classLoader);
         kieScanner = ks.newKieScanner(kieContainer);
         kieScanner.start(10000L);
         System.out.println("Started KieScanner for releaseId : " + releaseIdStr);
