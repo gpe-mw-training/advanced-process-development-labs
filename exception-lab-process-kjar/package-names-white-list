@@ -1,1 +1,2 @@
-com.redhat.gpte.bpms_advanced.exception_lab_process_kjar.**
+org.acme.specialtripsagency.hotelservice
+org.acme.specialtripsagency.flightservice
