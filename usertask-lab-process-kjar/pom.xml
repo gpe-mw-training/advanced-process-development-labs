@@ -7,10 +7,46 @@
   <version>1.0</version>
   <name>usertask-lab-process-kjar</name>
   <dependencies>
-    <dependency>
+	<dependency>
       <groupId>org.acme.special-trips-agency-ws</groupId>
       <artifactId>data-model</artifactId>
       <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-internal</artifactId>
+      <version>7.23.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-core</artifactId>
+      <version>7.23.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-persistence-jaxb</artifactId>
+      <version>7.23.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>7.23.0.Final-redhat-00003</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
@@ -18,7 +54,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.5.0.Final-redhat-2</version>
+        <version>7.23.0.Final-redhat-00003</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
