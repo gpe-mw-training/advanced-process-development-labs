@@ -76,3 +76,6 @@ hs_err_pid*
 
 # Bitronix log
 *.tlog
+
+# Vscode
+.vscode/

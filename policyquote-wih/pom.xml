@@ -11,8 +11,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
     </plugins>
@@ -32,13 +32,20 @@
     </dependency>
   </dependencies>
   <properties>
-    <version.bpms>7.7.0.Final-redhat-10</version.bpms>
+    <version.bpms>7.23.0.Final-redhat-00003</version.bpms>
   </properties>
   <repositories>
-    <repository>
-      <id>redhat</id>
-      <name>redhat-ga</name>
-      <url>https://maven.repository.redhat.com/ga/</url>
-    </repository>
-  </repositories>
+		<repository>
+			<id>redhat-ga</id>
+			<name>redhat-ga</name>
+			<url>https://maven.repository.redhat.com/ga/</url>
+		</repository>
+	</repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>redhat-ga-plugin</id>
+			<name>redhat-ga</name>
+			<url>https://maven.repository.redhat.com/ga/</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
